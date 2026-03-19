@@ -1,3 +1,12 @@
+samba (2:4.19.5+dfsg-1deepin5) unstable; urgency=high
+
+  * Fix CVE-2025-10230: Command injection in WINS server hook.
+    Add validation for NetBIOS names before passing to wins hook
+    to prevent unauthenticated remote command execution.
+    (Closes: CVE-2025-10230)
+
+ -- Security Fix <security@deepin.org>  Thu, 19 Mar 2026 21:15:00 +0800
+
 samba (2:4.19.5+dfsg-1deepin4) unstable; urgency=medium
 
   * fix missing systemd .service files.
